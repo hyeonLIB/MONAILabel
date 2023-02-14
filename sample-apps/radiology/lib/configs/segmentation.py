@@ -48,7 +48,7 @@ class Segmentation(TaskConfig):
                         "semimembranosus muscle",
                         "vastus medialis muscle",
                         "biceps femoris(long head)",
-                        "biceps femoris(short head)",
+                        "biceps femoris(short head)"
                     ]
         self.labels = {
             "":1,
