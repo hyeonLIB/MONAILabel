@@ -36,19 +36,19 @@ class Segmentation(TaskConfig):
         # Labels - http://xrayhead.com/theatlas.php?id=thigh
         label_list = [
                         "rectus femoris",
+                        "sartorius muscle",
                         "vastus lateralis",
                         "vastus intermedius",
-                        "gluteus maximus",
-                        "sartorius muscle",
+                        "vastus medialis muscle",
                         "adducter longus",
                         "adductor brevis",
                         "adductor magnus"
                         "gracilis muscle",
                         "semitendinosus muscle",
                         "semimembranosus muscle",
-                        "vastus medialis muscle",
                         "biceps femoris(long head)",
                         "biceps femoris(short head)"
+                        "gluteus maximus",
                     ]
         self.labels = {
             "":1,
