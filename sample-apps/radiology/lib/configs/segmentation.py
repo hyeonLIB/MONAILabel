@@ -38,12 +38,17 @@ class Segmentation(TaskConfig):
                         "rectus femoris",
                         "vastus lateralis",
                         "vastus intermedius",
-                        "adductor magnus",
-                        "biceps femoris(short head)",
-                        "biceps femoris(long head)",
+                        "gluteus maximus",
+                        "sartorius muscle",
+                        "adducter longus",
+                        "adductor brevis",
+                        "adductor magnus"
+                        "gracilis muscle",
+                        "semitendinosus muscle",
+                        "semimembranosus muscle",
                         "vastus medialis muscle",
-                        "sartonus muscle",
-                        "gracils muscle",
+                        "biceps femoris(long head)",
+                        "biceps femoris(short head)",
                     ]
         self.labels = {
             "":1,
