@@ -34,8 +34,16 @@ class Segmentation(TaskConfig):
         super().init(name, model_dir, conf, planner, **kwargs)
 
         # Labels - http://xrayhead.com/theatlas.php?id=thigh
-        label_list = [
+        label_list = [  
+                        "iliacus muscle",
+                        "sartorius muscle",
+                        "obturator externus",
+                        "abdominal oblique muscle",
+                        "psoas muscle"
+                        "piriformis muscle",
+                        "mulifidus muscle",
                         "rectus femoris",
+                        "rectus abdominus muscle",
                         "sartorius muscle",
                         "vastus lateralis",
                         "vastus intermedius",
@@ -49,6 +57,10 @@ class Segmentation(TaskConfig):
                         "biceps femoris(long head)",
                         "biceps femoris(short head)"
                         "gluteus maximus",
+                        "gluteus medius",
+                        "gluteus minimus",
+
+
                     ]
         self.labels = {
             "":1,
