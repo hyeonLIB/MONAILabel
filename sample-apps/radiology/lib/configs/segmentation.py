@@ -35,37 +35,37 @@ class Segmentation(TaskConfig):
 
         # Labels - http://xrayhead.com/theatlas.php?id=thigh
         label_list = [  
-                        "iliacus muscle",
-                        "sartorius muscle",
-                        "obturator externus",
-                        "abdominal oblique muscle",
-                        "psoas muscle"
-                        "piriformis muscle",
-                        "mulifidus muscle",
-                        "rectus femoris",
-                        "rectus abdominus muscle",
-                        "sartorius muscle",
-                        "vastus lateralis",
-                        "vastus intermedius",
-                        "vastus medialis muscle",
-                        "adducter longus",
-                        "adductor brevis",
-                        "adductor magnus"
-                        "gracilis muscle",
-                        "semitendinosus muscle",
-                        "semimembranosus muscle",
-                        "biceps femoris(long head)",
-                        "biceps femoris(short head)"
-                        "gluteus maximus",
-                        "gluteus medius",
-                        "gluteus minimus",
-
-
+                    "iliacus muscle",
+                    "sartorius muscle",
+                    "obturator internal muscle",
+                    "obturator externus muscle",
+                    "abdominal oblique muscle",
+                    "psoas muscle",
+                    "iliopsoas",
+                    "pectineus muscle",
+                    "tensor fascia lata muscle",
+                    "piriformis muscle",
+                    "mulifidus muscle",
+                    "rectus abdominus muscle",
+                    "rectus femoris muscle",
+                    "sartorius muscle",
+                    "vastus lateralis",
+                    "vastus intermedius",
+                    "vastus medialis muscle",
+                    "adducter longus",
+                    "adductor brevis",
+                    "adductor magnus",
+                    "gracilis muscle",
+                    "semitendinosus muscle",
+                    "semimembranosus muscle",
+                    "biceps femoris(long head)",
+                    "biceps femoris(short head)",
+                    "gluteus maximus",
+                    "gluteus medius",
+                    "gluteus minimus"
                     ]
-        self.labels = {
-            "":1,
-            "":2,
-            "":3,
+        self.labels = {key:idx for idx, key in enumerate(label_list)}
+        # self.labels = {
             # "spleen": 1,
             # "kidney_right": 2,
             # "kidney_left": 3,
@@ -91,7 +91,7 @@ class Segmentation(TaskConfig):
             # "heart_atrium_right": 47,
             # "heart_ventricle_right": 48,
             # "pulmonary_artery": 49,
-        }
+        # }
 
         # Model Files
         self.path = [
