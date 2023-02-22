@@ -34,35 +34,81 @@ class Segmentation(TaskConfig):
         super().init(name, model_dir, conf, planner, **kwargs)
 
         # Labels - http://xrayhead.com/theatlas.php?id=thigh
-        label_list = [  
-                    "iliacus muscle",
+        label_list = [
+                    # Anterior thigh muscle (thigh to extend the leg at the knee joint)
                     "sartorius muscle",
-                    "obturator internal muscle",
-                    "obturator externus muscle",
-                    "abdominal oblique muscle",
-                    "psoas muscle",
-                    "iliopsoas",
-                    "pectineus muscle",
-                    "tensor fascia lata muscle",
-                    "piriformis muscle",
-                    "mulifidus muscle",
-                    "rectus abdominus muscle",
                     "rectus femoris muscle",
-                    "sartorius muscle",
                     "vastus lateralis",
                     "vastus intermedius",
-                    "vastus medialis muscle",
-                    "adducter longus",
+                    "vastus medialis",
+                    "articularis genus muscle",
+
+                    # Medial thigh muscle (inner side of the thigh)
+                    "adductor longus",
                     "adductor brevis",
                     "adductor magnus",
+                    "adductor minimus",
                     "gracilis muscle",
-                    "semitendinosus muscle",
-                    "semimembranosus muscle",
-                    "biceps femoris(long head)",
-                    "biceps femoris(short head)",
+                    "pectineus",
+
+                    # Gluteal region (area of the body that includes the buttocks, hips and surrounding muscles)
                     "gluteus maximus",
                     "gluteus medius",
-                    "gluteus minimus"
+                    "gluteus minimus",
+                    "tensor fascia lata muscle",
+                    "piriformis muscle",
+                    "obturator internus muscle",
+                    "obturator externus muscle",
+                    "superior gemellus",
+                    "inferior gemellus",
+                    "quadratus femoris",
+
+                    # Posterior femoral muscle (the back of the thigh, also known ad the hamstring muscles)
+                    "semitendinous muscle",
+                    "semimembranosus muscle",
+                    "biceps femoris",
+
+                    # Else
+                    "iliacus muscle",
+                    "iliopsoas",
+                    "abdominal oblique muscle",
+                    "mulifidus muscle",
+                    "rectus abdominus muscle",
+
+                    # Other tissues
+                    "femoral",
+                    "iliac",
+                    "background"
+
+
+                    # "iliacus muscle",
+                    # "sartorius muscle",
+                    # "obturator internal muscle",
+                    # "obturator externus muscle",
+                    # "abdominal oblique muscle",
+                    # "psoas muscle",
+                    # "iliopsoas",
+                    # "pectineus muscle",
+                    # "tensor fascia lata muscle",
+                    # "piriformis muscle",
+                    # "mulifidus muscle",
+                    # "rectus abdominus muscle",
+                    # "rectus femoris muscle",
+                    # "sartorius muscle",
+                    # "vastus lateralis",
+                    # "vastus intermedius",
+                    # "vastus medialis muscle",
+                    # "adducter longus",
+                    # "adductor brevis",
+                    # "adductor magnus",
+                    # "gracilis muscle",
+                    # "semitendinosus muscle",
+                    # "semimembranosus muscle",
+                    # "biceps femoris(long head)",
+                    # "biceps femoris(short head)",
+                    # "gluteus maximus",
+                    # "gluteus medius",
+                    # "gluteus minimus"
                     ]
         self.labels = {key:idx for idx, key in enumerate(label_list)}
         # self.labels = {
