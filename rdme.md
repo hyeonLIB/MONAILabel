@@ -8,4 +8,4 @@ monailabel start_server --app apps/radiology --studies ./datasets/gnuh/ --conf m
 
 ./monailabel/scripts/monailabel start_server --app sample-apps/radiology --studies datasets/gnuh_test/ --conf models segmentation
 
-+
++ cAN'T SCRIBBLE WITH NO CONTRAST OF TISSUE
